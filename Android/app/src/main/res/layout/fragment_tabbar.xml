@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:id="@+id/rootLayout"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/tabContainerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <!-- tab0: ユーザ一覧 -->
+        <FrameLayout
+            android:id="@+id/tab0Layout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/tab0ImageView"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/tab0_on"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+
+        <!-- tab1: マッチング -->
+        <FrameLayout
+            android:id="@+id/tab1Layout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/tab1ImageView"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/tab1_off"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+
+        <!-- tab2: マイページ -->
+        <FrameLayout
+            android:id="@+id/tab2Layout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/tab2ImageView"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/tab2_off"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

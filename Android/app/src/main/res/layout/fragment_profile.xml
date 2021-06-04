@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:id="@+id/rootLayout"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <!-- 戻るボタン -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/back"
+            android:scaleType="fitCenter"
+            android:background="#0000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="プロフィール"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+        <!-- 設定ボタン -->
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="80dp"
+            android:layout_height="44dp"
+            android:text="設定"
+            android:textSize="18dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:background="@drawable/shape_eecd42_corner6"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="12dp"/>
+    </FrameLayout>
+
+    <!-- ユーザ画像 -->
+    <ImageView
+        android:id="@+id/userImageView"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/image_guide"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="名前"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"/>
+        <!-- ユーザ名 -->
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_ffffff_corner22"
+            android:layout_marginLeft="20dp"
+            android:inputType="text"
+            android:paddingLeft="22dp"
+            android:paddingRight="22dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="メッセージ"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:inputType="text"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"/>
+        <!-- メッセージ -->
+        <EditText
+            android:id="@+id/messageEditText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_ffffff_corner22"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="22dp"
+            android:paddingRight="22dp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view userInteractionEnabled="NO" contentMode="scaleToFill" id="xoy-OG-aP6" customClass="Toast" customModule="Sample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mwx-4I-t3n">
+                    <rect key="frame" x="23" y="792.5" width="368.5" height="49.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="エラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラー" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VuG-FT-OkK">
+                            <rect key="frame" x="20" y="8" width="328.5" height="33.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.92549019610000005" green="0.41568627450000001" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="VuG-FT-OkK" secondAttribute="bottom" constant="8" id="65w-xV-LH2"/>
+                        <constraint firstAttribute="trailing" secondItem="VuG-FT-OkK" secondAttribute="trailing" constant="20" id="8Co-6W-zNd"/>
+                        <constraint firstItem="VuG-FT-OkK" firstAttribute="leading" secondItem="mwx-4I-t3n" secondAttribute="leading" constant="20" id="OaO-An-oz8"/>
+                        <constraint firstItem="VuG-FT-OkK" firstAttribute="top" secondItem="mwx-4I-t3n" secondAttribute="top" constant="8" id="aiK-IW-LNb"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="5uI-BL-ujL"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="5uI-BL-ujL" firstAttribute="bottom" secondItem="mwx-4I-t3n" secondAttribute="bottom" constant="20" id="AdT-eR-NOv"/>
+                <constraint firstItem="mwx-4I-t3n" firstAttribute="centerX" secondItem="xoy-OG-aP6" secondAttribute="centerX" id="Izy-yh-x1f"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mwx-4I-t3n" secondAttribute="trailing" constant="20" id="NgP-Qc-UCB"/>
+                <constraint firstItem="mwx-4I-t3n" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xoy-OG-aP6" secondAttribute="leading" constant="20" id="To8-vb-Y3Y"/>
+            </constraints>
+            <connections>
+                <outlet property="textLabel" destination="VuG-FT-OkK" id="C6v-Qy-UtE"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="146"/>
+        </view>
+    </objects>
+</document>

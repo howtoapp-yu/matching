@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:id="@+id/rootLayout"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <!-- 戻るボタン -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/back"
+            android:scaleType="fitCenter"
+            android:background="#0000"/>
+
+        <!-- チャット相手のユーザ名 -->
+        <TextView
+            android:id="@+id/headerNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ユーザ名"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_vertical"
+            android:maxLines="1"/>
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:listSelector="#0000"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:divider="@null"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#e9e9e9">
+        <!-- メッセージ入力 -->
+        <EditText
+            android:id="@+id/messageEditText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="44dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/shape_ffffff_corner22"
+            android:paddingLeft="22dp"
+            android:paddingRight="22dp"/>
+
+        <!-- 送信ボタン -->
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="90dp"
+            android:layout_height="44dp"
+            android:text="送信"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape_1f4e79_corner22"/>
+    </LinearLayout>
+
+</LinearLayout>

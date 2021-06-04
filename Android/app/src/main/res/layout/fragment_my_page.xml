@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:id="@+id/rootLayout"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="マイページ"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="32dp"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+        <!-- ユーザ画像 -->
+        <ImageView
+            android:id="@+id/userImageView"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/no_image"
+            android:scaleType="centerCrop"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+            <!-- ユーザ名 -->
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ユーザ名"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:maxLines="1"/>
+            <!-- メッセージ -->
+            <TextView
+                android:id="@+id/messageTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="メッセージ"
+                android:textSize="13dp"
+                android:textColor="#000"
+                android:layout_marginTop="6dp"
+                android:maxLines="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 編集するボタン -->
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="編集する"
+        android:textSize="18dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:background="@drawable/shape_eecd42_corner10"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp"/>
+
+</LinearLayout>
